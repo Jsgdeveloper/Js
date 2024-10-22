@@ -1,0 +1,10 @@
+version: 1
+services:
+  - type: web
+    name: discord-bot
+    env: node plan: paid
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: DISCORD_TOKEN
+        fromEnv: DISCORD_TOKEN
